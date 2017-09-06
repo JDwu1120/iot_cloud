@@ -115,7 +115,7 @@ public class OriginService implements IOriginFilterService {
             List<Origin> list = new ArrayList<>();
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                String key = line.split(";")[0];
+                String key = line.split(":")[0];
                 String value = line.split(":")[1];
                 list.add(new Origin(key, value));
             }
